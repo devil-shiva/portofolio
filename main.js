@@ -1,8 +1,8 @@
-// setTimeout(() => {
+setTimeout(() => {
     
-//     document.getElementById('loading').style.maxHeight = "0"
+    document.getElementById('loading').style.maxHeight = "0"
 
-// }, 3500);
+}, 3500);
 
 let closenav = document.querySelector('.closebtn')
 let ham = document.getElementById('hamburger')
