@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+
+}
+/* ******** loading page ********** */
+.loading-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#text{
+    font-size: 10em;
+
+    color: #FF2E63;
+    animation: animate 2s ease-in-out infinite;
+}
+#text2{
+    font-size: 10em;
+    color: transparent;
+    -webkit-text-stroke: 2px #08D9D6;
+    position: absolute;
+}
+@keyframes animate{
+    0%, 100%{
+        clip-path: polygon(0% 41%, 52% 57%, 100% 44%, 100% 100%, 0% 100%);
+
+    }
+    50%{
+        clip-path: polygon(0 70%, 46% 33%, 100% 59%, 100% 100%, 0% 100%);
+    }
+}
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar1{
+    width: 15em;
+    position: absolute;
+    background-color: #FF2E63;
+    height: .2em;
+    animation: bar 1s ease 3;
+}
+@keyframes bar {
+    0%{
+        width: 10%;
+    }
+    50%{
+        width: 50%;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/* ************* body ************* */
+ 
+    /* ********* nav bar *********** */
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    font-size: 2em;
+    padding: 1em; 
+    background-color: #364F6B;
+    color: #FC5185;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+.ham {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ham ion-icon{
+    cursor: pointer;
+    margin-right: .5em;
+}
+.ham ion-icon:hover{
+    color: #3FC1C9;
+}
+.logo span{
+    color: #30E3CA;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #FF2E63;
+    color: #30E3CA;
+    z-index: 2;
+    font-size: 2em;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.nav-logo{
+    padding: 1em;
+    display: flex;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    padding: 1em;
+}
+.navigation a{
+    margin: 1em 0;
+    color: #252A34;
+    
+}
+.navigation a:hover{
+    color: #EAEAEA;
+    text-decoration: underline;
+    text-underline-offset: .5em;
+    text-decoration-thickness: 4px;
+}
+.bottom{
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+}
+.closebtn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ************** containe **************** */
+
+.page1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    background-color: #252A34;
+    color: #FF2E63;
+}
+.Slogan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.page2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+    background-color: #08D9D6;
+    padding: 1em;
+    color: #252A34;
+}
+.abtme{
+    text-align: center;
+}
+.abtme span{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 1.2em;
+}
+
+.image img{
+    width: 8em;
+    transition: all 0.5s;
+}
+.image img:hover{
+    box-shadow: 0px 0px 20px #FF2E63;
+}
+.bihar{
+    
+    margin-top: 1em;
+}
+#fp{
+    
+    padding-left: 1em;
+}
+.bihar ul li{
+    font-size: large;
+}
+.title{
+    background-color: #FF2E63;
+    padding: 1em;
+    cursor: pointer;
+}
